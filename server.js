@@ -6,15 +6,14 @@ const {Sequelize} = require('sequelize')
 
 dotenv.config()
 
-const DB_PORT = process.env.DB_PORT
 const PORT = process.env.PORT
 
 // SEQUELIZE
 
 
 var con = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
+    host: 'database-1.cd5loy1r9gmn.us-east-1.rds.amazonaws.com',
+    user: 'admin',
     database: 'integra'
 })
 
